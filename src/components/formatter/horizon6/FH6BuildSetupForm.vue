@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { DriveType, RimStyleType, TireCompound, TrackWidthType, TransmissionUpgrade } from '../../../lib/types';
+import { DriveType, RimStyleType, TireCompound, TrackWidthType, TransmissionUpgrade, Upgrade } from '../../../lib/types';
 import { enumToOptions } from '../../../lib/utils';
 import EnumSelect from '../../EnumSelect.vue';
 import FrontRearInputs from '../../FrontRearInputs.vue';
@@ -98,7 +98,7 @@ const trackWidthOptions = enumToOptions(TrackWidthType);
             v-model="form.build.engine.centrifugalSupercharger"
             label="Centrifugal Supercharger"
           />
-          <LimitedUpgradeSelect
+          <UpgradeSelect
             v-model="form.build.engine.intercooler"
             label="Intercooler"
           />
