@@ -66,7 +66,7 @@ export interface EngineUpgrades extends BuildSectionUpgrades {
   twinTurbo: TurboUpgrade;
   supercharger: LimitedUpgrade;
   centrifugalSupercharger: LimitedUpgrade;
-  intercooler: LimitedUpgrade;
+  intercooler: Upgrade;
   oilCooling: Upgrade;
   flywheel: Upgrade;
   motorAndBattery: Upgrade;
@@ -274,7 +274,7 @@ export default function getFH6DefaultFormV1(): FH6Setup {
         twinTurbo: TurboUpgrade.na,
         supercharger: LimitedUpgrade.na,
         centrifugalSupercharger: LimitedUpgrade.na,
-        intercooler: LimitedUpgrade.stock,
+        intercooler: Upgrade.stock,
         oilCooling: Upgrade.stock,
         flywheel: Upgrade.stock,
         motorAndBattery: Upgrade.na,
