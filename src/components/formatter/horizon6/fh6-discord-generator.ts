@@ -252,11 +252,11 @@ function formatDamping(tune: TuneSettings): string[] {
     return [];
   }
   const lines: string[] = [h1('Damping')];
-  if (showFrontRearValues(tune.bump)) {
-    lines.push(...formatFrontRear('Bump', tune.bump));
-  }
   if (showFrontRearValues(tune.damping)) {
     lines.push(...formatFrontRear('Rebound', tune.damping));
+  }
+  if (showFrontRearValues(tune.bump)) {
+    lines.push(...formatFrontRear('Bump', tune.bump));
   }
 
   if (lines.length === 1) return [];
